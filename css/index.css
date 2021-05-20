@@ -1,201 +1,204 @@
-body{
-	margin: 0px auto;
-	font-family: "Agency FB";
-	color: #000000;
+body {
+    margin: 0px auto;
+    font-family: "Agency FB";
+    color: #000000;
 }
 
-#main_page{
-	margin: 0px auto;
-	/*border: 1px solid red;*/
-	background-image: url(../images/summer.jpg);
-	width: 100%;
-	height: 100%;
+#main_page {
+    margin: 0px auto;
+    /*border: 1px solid red;*/
+    background-image: url(../images/summer.jpg);
+    width: 100%;
+    height: 100%;
 }
 
-#black{
-	background-color: black;
-	opacity: 0.7;
-	height: 100%;
-	width: 100%;
-	position: relative;
-
+#black {
+    background-color: black;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#cdbtn{
-	position: absolute;
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px;
+    order: 1;
+}
+
+#flex-inside-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#cdbtn {
+    /* position: absolute;
 	top: 80px;
-	left: 40px;
-
+	left: 40px; */
 }
 
-#jtdbtn{
-	position: absolute;
+#jtdbtn {
+    /* position: absolute;
 	top: 200px;
-	left: 40px;
-
+	left: 40px; */
+    margin: 5px;
 }
 
-#txtbox{
-	position: absolute;
+#txtbox {
+    /* position: absolute;
 	top: 150px;
-	left: 40px;
+	left: 40px; */
+    margin: 5px;
 }
 
-#vabtn{
-	position: absolute;
+#vabtn {
+    /* position: absolute;
 	top: 150px;
-	left: 1200px;
+	left: 1200px; */
+    order: 3;
 }
 
-.btn{
-	font-size: 22px;
-	font-family: "Agency FB";
-	background-color: transparent;
-	color: white;
-	padding: 5px 10px;
-	border-radius: 5px;
-	outline: none;
-
+.btn {
+    font-size: 22px;
+    font-family: "Agency FB";
+    background-color: transparent;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
 }
 
-.inp_box{
-	font-size: 18px;
-	font-family: Arial;
-	color: white;
-	border: 0px solid;
-	border-bottom: 1px solid #eee;
-	padding: 5px 0px;
-	width: 60%;
-	background-color: transparent;
-	outline: none;
-	/*opacity: 0.6;*/
-	border-color: rgba(255,255,255,.2);
+.inp_box {
+    font-size: 18px;
+    font-family: Arial;
+    color: white;
+    border: 0px solid;
+    border-bottom: 1px solid #eee;
+    padding: 5px 0px;
+    /* width: 60%; */
+    background-color: transparent;
+    outline: none;
+    /*opacity: 0.6;*/
+    border-color: rgba(255, 255, 255, .2);
 }
 
-#chg_year{
-	color: black;
-	text-align: center;
-	font-size: 32px;
-	font-family: "Agency FB";
-	width: 7%;
-	border: 1px solid black;
+#chg_year {
+    color: black;
+    text-align: center;
+    font-size: 32px;
+    font-family: "Agency FB";
+    width: 7%;
+    border: 1px solid black;
 }
 
-#chg_yearb{
-	margin: 6px auto;
-	color: black;
-	font-size: 12px;
-	font-family: "Agency FB";
-	width: 5%;
-	padding-bottom: 5px;
+#chg_yearb {
+    margin: 6px auto;
+    color: black;
+    font-size: 12px;
+    font-family: "Agency FB";
+    width: 5%;
+    padding-bottom: 5px;
 }
 
-#calendar{
-	width: 70%; 
-	background-color: white;
-	border-radius: 5px;
-	opacity: 0.8;
-	position: absolute;
+#calendar {
+    /* width: 70%; */
+    background-color: white;
+    border-radius: 5px;
+    opacity: 0.8;
+    /* position: absolute;
 	top: 40px;
-	left: 210px;
+	left: 210px; */
+    order: 2;
 }
-#calendar2{
-	width: 70%; 
-	background-color: white;
-	border-radius: 5px;
-	opacity: 0.8;
-	position: absolute;
+
+#calendar2 {
+    /* width: 70%; */
+    background-color: white;
+    border-radius: 5px;
+    opacity: 0.8;
+    /* position: absolute;
 	top: 40px;
-	left: 210px;
+	left: 210px; */
 }
 
-#pic{
-	opacity: 1;
-	width: 30%;
-	position: absolute;
-	top: 40px;
-	left: 510px;
+#pic {
+    opacity: 1;
+    width: 30%;
+    position: absolute;
+    top: 40px;
+    left: 510px;
 }
 
-#main_table{
+#main_table {}
+
+.icon {
+    width: 40px;
+    cursor: pointer;
 }
 
-.icon{
-	width: 40px;
-	cursor: pointer;
+#year_head {
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
 }
 
-#year_head{
-	text-align: center;
-	width: 100%;
-	font-size: 32px;
+#row2 {
+    width: 100%;
+    /*border: 1px solid red;*/
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 5px;
 }
 
-#row2{
-	width: 100%;
-	/*border: 1px solid red;*/
-	color: white;
-	background-color: black;
-	opacity: 0.5;
-	border-radius: 5px;
+.months_list {
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 0px 40px;
+    text-align: center;
+    cursor: pointer;
 }
 
-.months_list{
-	border: 1px solid white;
-	border-radius: 5px;
-	font-size: 18px;
-	padding: 0px 40px;
-	text-align:center;
-	cursor:pointer;
+.days_table {
+    width: 100%;
 }
 
-
-.days_table{
-	width: 100%;
+.days_list {
+    color: white;
 }
 
-.days_list{
-	color: white;
+.months_listb {
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 48px;
+    padding: 20px 20px;
+    text-align: center;
 }
 
-.months_listb{
-	border: 1px solid white;
-	border-radius: 5px;
-	font-size: 48px;
-	padding: 20px 20px;
-	text-align: center;
-	
+.days_table2 {
+    font-size: 28px;
+    text-align: center;
+    width: 100%
 }
 
-.days_table2{
-	font-size: 28px;
-	text-align: center;
-	width: 100%
-	
+.days_list2 {
+    color: white;
+    padding: 12px;
 }
 
-.days_list2{
-	color: white;
-	padding: 12px;
+#tdate {
+    background-color: green;
 }
 
-#tdate{
-	background-color: green;
-}
-
-#copyrgt{
-	color: white;
-	font-size: 24px;
-	position: absolute;
+#copyrgt {
+    color: white;
+    font-size: 24px;
+    /* position: absolute;
 	top: 630px;
-	left: 1280px;
-
+	left: 1280px; */
 }
-
-
-
-
-
-
-
-
